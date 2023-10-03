@@ -5,7 +5,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 numbers = '0123456789'
 special = '!@#$%^&*_-'
 
-def GeneratePassword(length: int = 12, alphanumeric: bool = True, specialChars: bool = True, copyToClipboard: bool = True) -> str:
+def GeneratePassword(length: int = 12, alphanumeric: bool = True, specialChars: bool = True, copyToClipboard: bool = True, messages: bool = False) -> str:
     password = ''
 
     if length > 32: length = 32
@@ -21,10 +21,10 @@ def GeneratePassword(length: int = 12, alphanumeric: bool = True, specialChars: 
         elif alphanumeric and specialChars:
             password += choice(alphabet + numbers + special)
 
-    print('Sucessfully generated password!')
+    if messages: print('Sucessfully generated password!')
 
     if copyToClipboard:
         copy(password)
-        print('Copied password to clipboard!')
+        if messages: print('Copied password to clipboard!')
 
     return password
