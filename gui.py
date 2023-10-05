@@ -3,7 +3,7 @@ from main import GeneratePassword
 from pyperclip import copy
 
 app = tk.Tk()
-app.title('Password Generator')
+app.title('Simple Password Generator')
 app.geometry('400x600')
 
 copyCount = 0
