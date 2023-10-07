@@ -5,7 +5,7 @@ A simple password generator written in python that allows you to set parameters 
 This password generator gives you 2 extra options to customize your password:
 - Use alphanumeric characters
 - Use special characters
-It also allows you to have the password automatically copied to your clipboard upon generation
+It also allows you to have the password automatically copied to your clipboard upon generation.
 
 ## GUI
 The new GUI integrates the password generator with an easier to use user interface. This interface includes:
